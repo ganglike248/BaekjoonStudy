@@ -68,3 +68,15 @@ q.popleft() # 큐의 가장 첫 번째 요소 반환
 q.append(1) # 큐에 1 추가
 
 -----
+<모든 값이 0인지 확인>
+
+if all(x == 0 for x in nums) # nums의 값들이 모두 0인지 확인
+
+if not any(nums):  # 모든 값이 0이면 True
+
+-----
+<리스트 정렬>
+
+nums = sorted(nums) # 리스트를 오름차순 정렬
+
+nums = sorted(nums, reverse=True) # 내림차순 정렬
