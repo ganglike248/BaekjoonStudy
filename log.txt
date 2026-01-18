@@ -1,0 +1,70 @@
+<한 줄에 여러 개 입력 받기>
+
+A, B = map(int, input().split())
+map: 하나씩 할당
+int: 타입 선정
+split(): 한 줄에 여러 개 입력 시 한 개씩 분리
+
+-----
+<input 보다 더 빠른 입력>
+
+import sys # sys 라이브러리 불러오기
+
+T = int(sys.stdin.readline()) # print 보다 더 빠른 입력 받기
+
+S = sys.stdin.readline().rstrip() # 문자열의 오른쪽 끝 공백/개행 제거
+
+A, B = map(int, sys.stdin.readline().split()) # 한 줄에 여러 개 받기
+
+-----
+<문자열 출력 시 변수 사용>
+
+print(f'Case #{i}: {C}') # print문 안에 f와 '를 사용하고 변수를 {}로 감싸면 됨
+
+-----
+<반복문 사용법>
+
+for i in range(10) # i에 0부터 9까지 할당하며 반복
+
+for _ in range(10) # 할당없이 그냥 10번 반복
+
+-----
+<리스트 입력 받기>
+
+list = [] # 리스트 초기화
+
+list = list(map(int, input().split())) # 리스트 초기화와 동시에 값 한 번에 입력 받기
+
+list.append(int(input())) # 입력 받은 정수를 리스트에 바로 추가
+max(list) # 리스트의 값 중 최대값
+list.index(max(list)) # 리스트의 값 중 최대값의 인덱스 반환
+
+-----
+<문자열의 문자를 하나씩 가져오기>
+for ch in S:
+    print(ch) # 문자열 S의 문자를 1개씩 출력
+
+-----
+<아스키 코드로 변환>
+
+ord("A") -> 아스키 코드(숫자)로 변환
+chr(54) -> 아스키 코드를 문자로 변환
+
+-----
+<특수문자 출력>
+
+\, ', " 출력 시 \를 앞에 하나 더 붙여야 출력 가능
+\ -> \\, ' -> \', " -> \"
+
+-----
+<큐 사용법>
+
+from collections import deque # 라이브러리에서 큐 가져오기
+
+q = deque(range(1, 11)) # 큐에 1~10 넣기
+
+len(q) # 큐의 길이 확인
+q.popleft() # 큐의 가장 첫 번째 요소 반환
+q.append(1) # 큐에 1 추가
+
+-----
