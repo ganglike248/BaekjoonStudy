@@ -86,6 +86,8 @@ nums = sorted(nums, reverse=True) # 내림차순 정렬
 
 num in arr # num이라는 게 arr라는 리스트 안에 있는지 확인. 있으면 True, 없으면 False
 
+arr.find(num) # num이 arr 안에 있으면 인덱스 반환, 없으면 -1 반환
+
 -----
 <알파벳 순회>
 
