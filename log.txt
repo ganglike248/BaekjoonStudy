@@ -28,6 +28,8 @@ for i in range(10) # i에 0부터 9까지 할당하며 반복
 
 for _ in range(10) # 할당없이 그냥 10번 반복
 
+for + else문 => for문을 break없이 정상적으로 끝까지 다 돌면 else문 실행
+
 -----
 <리스트 입력 받기>
 
