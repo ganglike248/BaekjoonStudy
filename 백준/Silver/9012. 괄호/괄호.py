@@ -1,7 +1,7 @@
 T = int(input())
 
 for i in range(T):
-    S = list(input())
+    S = input()
     count = 0
 
     for j in S:
@@ -13,8 +13,8 @@ for i in range(T):
         if count < 0:
             print("NO")
             break
-    
-    if count == 0:
-        print("YES")
-    elif count > 0:
-        print("NO")
+    else:
+        if count == 0:
+            print("YES")
+        else:
+            print("NO")
