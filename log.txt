@@ -12,7 +12,11 @@ import sys # sys 라이브러리 불러오기
 
 T = int(sys.stdin.readline()) # print 보다 더 빠른 입력 받기
 
-S = sys.stdin.readline().rstrip() # 문자열의 오른쪽 끝 공백/개행 제거
+S = sys.stdin.readline().rstrip() # sys.stdin.readline()은 개행문자를 포함해서 입력받기 때문에 문자열의 경우 개행 문자 제거 해줘야 함. 입력받은 문자열의 오른쪽 끝 공백/개행 제거
+
+strip(): 좌우 공백/개행 제거
+rstrip(): 오른쪽 공백/개행 제거
+lstrip(): 왼쪽 공백/개행 제거
 
 A, B = map(int, sys.stdin.readline().split()) # 한 줄에 여러 개 받기
 
