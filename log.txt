@@ -155,3 +155,12 @@ def 함수이름(매개변수):
 
 sys.exit(0) # C언어에서 return 0;와 같은 기능
 exit(0)은 인터프리터용으로, 권장하지 않음
+
+-----
+
+<재귀 깊이 제한 풀기>
+
+# 파이썬의 기본 재귀 한도는 1000번
+
+import sys
+sys.setrecursionlimit(10**6)
