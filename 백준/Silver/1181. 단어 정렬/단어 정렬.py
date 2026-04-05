@@ -1,14 +1,15 @@
+import sys
+input = lambda : sys.stdin.readline().strip()
+
 N = int(input())
-st = []
+words = []
 
+for _ in range(N):
+    words.append(input())
 
-for i in range(N):
-    S = input()
+words = list(set(words))
 
-    if S not in st:
-        st.append(S)
+words.sort(key=lambda x : (len(x), x))
 
-st = sorted(st, key=lambda x : (len(x), x))
-
-for i in st:
+for i in words:
     print(i)
