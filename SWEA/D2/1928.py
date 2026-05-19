@@ -66,4 +66,4 @@ for i in range(int(input())):
         # chr() => 정수에 해당하는 문자로 변경
         # result에 추가
 
-    print(result)
+    print(f'#{i+1} {result}')
